@@ -5,9 +5,7 @@
 </head>
 <body>
 <form method="post">
-	{% if msg %}
-		<p>{{ msg }}</p>
-	{% endif %}
+	{{ msg|safe }}
 	<label for="num">Encribe un número</label>
 	<input type="number" id="num" name="numero">
 </form>

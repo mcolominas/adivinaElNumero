@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<form method="post">
+	{% if msg %}
+		<p>{{ msg }}</p>
+	{% endif %}
+	<label for="num">Encribe un número</label>
+	<input type="number" id="num" name="numero">
+</form>
+</body>
+</html>
